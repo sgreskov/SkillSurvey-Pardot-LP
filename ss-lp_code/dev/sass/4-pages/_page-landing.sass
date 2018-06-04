@@ -1,0 +1,63 @@
+.site
+	height: 20px
+	width: 100%
+	background: red
+
+// Example of a for loop to step through color percentage
+$prct-yellow: 90%
+@for $i from 1 through 9
+	.content:nth-child(#{$i})
+		background-color: mix($yellow, $white, $prct-yellow)
+
+	$prct-yellow: $prct-yellow - 10%
+
+
+// Exmample of animated hamburger
+.mobile-nav-toggle
+	display: flex
+	align-items: center
+	margin: 0 auto
+	width: 100%
+	height: 100%
+	padding: 0 16%
+	box-sizing: border-box
+	background: rgba(0,0,0,1)
+	&:hover
+		cursor: pointer
+		background: rgba(0,0,0,0)
+
+	transition: all .3s ease-in-out
+
+	span,
+	span:before,
+	span:after
+		content: ""
+		display: block
+		height: 4px
+		width: 80px
+		margin: 0 auto
+		background: #fff
+		position: relative
+
+		transition: all .3s ease-in-out
+
+	span:before
+		top: 24px
+
+	span:after
+		top: -28px
+
+	&:hover span
+		background: transparent
+
+	&:hover span:before,
+	&:hover span:after
+		transform-origin: center
+		transform: rotate(45deg)
+		top: -4px
+		background: #000
+
+	&:hover span:before
+		transform: rotate(-45deg)
+		top: 0
+
