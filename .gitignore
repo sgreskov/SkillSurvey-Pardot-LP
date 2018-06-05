@@ -1,0 +1,6 @@
+.DS_Store
+.idea/
+ss-lp_code/site/
+ss-lp_code/node_modules/
+yarn.lock
+ss-lp_code/.sass-cache
