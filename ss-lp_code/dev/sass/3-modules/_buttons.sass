@@ -1,21 +1,12 @@
-// Primary mixin
-@mixin buttons
-  a.button, button
-    @include button(black, silver)
-    &.blue
-      @include button(white, blue)
-    &.red
-      @include button(white, red)
-    &.green
-      @include button(white, green)
-
-// Button mixin
-@mixin button($text-color, $bg-color)
-  font: 12px bold sans-serif
-  padding: 3px 8px
-  @include color-button($text-color, $bg-color)
-  &:hover,
-  &:focus
-    @include color-button($text-color, lighten($bg-color, 10%))
-  &:active
-    background: darken($bg-color, 5%)
+.button 
+  color: $white
+  padding: 8px 16px
+  border: 2px solid white
+  display: inline-block
+  margin-top: 24px
+  margin-bottom: 24px
+  border-radius: $border-radius
+.button:hover 
+  color: $white
+  cursor: pointer
+  background: rgba(255,255,255,0.08)

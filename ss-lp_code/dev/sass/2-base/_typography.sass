@@ -5,14 +5,31 @@ $fixed-font-family: monospace !default
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
+  font-family: $site-main-font
 
 .gigantic
 
 .huge, h1
+  font-size: 32px
+  line-height: 56px
+  font-weight: 400
+  margin-bottom: 40px
+  @media #{$small}
+    font-size: 28px
+    line-height: 40px
+    margin-bottom: 24px
 
 .large, h2
+  font-size: 28px
+  line-height: 40px
+  font-weight: 400
+  margin-bottom: 24px
 
 .bigger, h3
+  font-size: 20px
+  line-height: 24px
+  font-weight: 400
+  margin-bottom: 16px
 
 .big, h4
 
@@ -24,8 +41,14 @@ html
   font-size: 1em
 
 p
-  font: 400 1em/1.5em $site-font
-  margin-bottom: 1.5rem
+  font: 400 16px/24px $site-secondary-font
+  margin-bottom: 24px
+  color: #666666
+  @media #{$small}
+    font: 400 16px/24px $site-secondary-font
+
+p.no-margin
+  margin-bottom: 0
 
 em
   font-style: italic
@@ -39,3 +62,17 @@ hr
   clear: both
   margin: 10px 0 30px
   height: 0
+
+ul
+  padding: 16px 0 0 0
+  margin: 0
+  @media #{$small}
+    margin: 0 0 40px 0
+
+li
+  background: url('i/icons/checkbox_icon_orange_35x35.png') no-repeat left top
+  background-size: 32px
+  padding: 4px 0px 6px 48px
+  list-style: none
+  margin: 0 0 24px
+  color: #666666

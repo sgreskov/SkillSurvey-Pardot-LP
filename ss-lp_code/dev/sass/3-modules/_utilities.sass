@@ -4,12 +4,20 @@
 .u-text-align-left
 	text-align: left
 
+.u-text-align-right
+	text-align: right
+	@media #{$small}
+		text-align: left
+
 .u-align-self--center
 	align-self: center
 
 .u-small-text
 	font-size: 14px
 	line-height: 16px
+.u-centered
+	display: block
+	margin: 0 auto
 
 .u-screenreader
 	display: none
@@ -17,17 +25,52 @@
 .u-circle
 	border-radius: 50%
 	display: inline-block
+.u-margin-top
+	margin-top: 64px
+.u-padded-sides
+	padding: 0 80px
+	@media #{$medium}
+		padding: 0 24px
+	@media #{$small}
+		padding: 0
+.u-padded-left-side
+	padding: 0 0 0 80px
+	@media #{$medium}
+		padding: 0 0 0 24px
+	@media #{$small}
+		padding: 0
+.u-indented
+	margin-left: 40px
+	@media #{$medium}
+		margin-left: 24px
 
-.u-extra-padding-sides
-	padding-left: ($site-padding * 1.5)
-	padding-right: ($site-padding * 1.5)
+.u-half-indented
+	margin-left: 24px
 
-.u-extra-padding-top
-	padding-top: ($site-padding * 2)
+.u-narrow
+	max-width: 480px
+	margin: 0 auto
 
-.u-extra-padding-bottom
-	padding-bottom: ($site-padding * 2)
+.u-text-orange
+	color: $ss-orange
 
+.u-text-grey
+	color: $ss-mid-grey
+
+.u-text-dark-grey
+	color: #666666
+
+.u-text-blue
+	color: $ss-blue
+
+.u-flexible-img
+	margin-top: 40px
+	display: block
+	@media #{$small}
+		width: 100%
+
+.u-bold
+	font-weight: bold!important
 //Silent Class Selectors
 %clearfix
 	*zoom: 1
@@ -38,4 +81,3 @@
 		line-height: 0
 	&:after
 		clear: both
-
