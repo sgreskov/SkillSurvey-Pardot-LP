@@ -822,38 +822,39 @@ footer a {
 
 /* line 138, ../dev/sass/4-pages/_page-landing.sass */
 .js-bar {
-  width: 50%;
+  width: 0;
   position: absolute;
   top: 0;
   left: 0;
   height: 10px;
   border-radius: 10px;
+  transition: 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-/* line 145, ../dev/sass/4-pages/_page-landing.sass */
+/* line 146, ../dev/sass/4-pages/_page-landing.sass */
 .bar-data {
   position: absolute;
   right: -40px;
   top: -8px;
 }
 @media screen and (max-width: 800px) {
-  /* line 145, ../dev/sass/4-pages/_page-landing.sass */
+  /* line 146, ../dev/sass/4-pages/_page-landing.sass */
   .bar-data {
     right: -32px;
   }
 }
 
-/* line 151, ../dev/sass/4-pages/_page-landing.sass */
+/* line 152, ../dev/sass/4-pages/_page-landing.sass */
 .bar-group {
   margin-bottom: 16px;
 }
 
-/* line 154, ../dev/sass/4-pages/_page-landing.sass */
+/* line 155, ../dev/sass/4-pages/_page-landing.sass */
 .bars-inline {
   overflow: hidden;
 }
 
-/* line 157, ../dev/sass/4-pages/_page-landing.sass */
+/* line 158, ../dev/sass/4-pages/_page-landing.sass */
 .bars-inline p {
   display: inline-block;
   width: 48%;
@@ -865,14 +866,14 @@ footer a {
   clear: left;
 }
 @media screen and (max-width: 1024px) {
-  /* line 157, ../dev/sass/4-pages/_page-landing.sass */
+  /* line 158, ../dev/sass/4-pages/_page-landing.sass */
   .bars-inline p {
     padding-left: 16px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 157, ../dev/sass/4-pages/_page-landing.sass */
+  /* line 158, ../dev/sass/4-pages/_page-landing.sass */
   .bars-inline p {
     padding: 0;
     display: block;
@@ -882,7 +883,7 @@ footer a {
   }
 }
 
-/* line 177, ../dev/sass/4-pages/_page-landing.sass */
+/* line 178, ../dev/sass/4-pages/_page-landing.sass */
 .bars-inline .bars {
   float: left;
   width: 52%;
@@ -890,7 +891,7 @@ footer a {
   margin-bottom: 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 177, ../dev/sass/4-pages/_page-landing.sass */
+  /* line 178, ../dev/sass/4-pages/_page-landing.sass */
   .bars-inline .bars {
     width: 100%;
     float: none;
@@ -900,24 +901,24 @@ footer a {
   }
 }
 
-/* line 188, ../dev/sass/4-pages/_page-landing.sass */
+/* line 189, ../dev/sass/4-pages/_page-landing.sass */
 .bars-inline .bars .js-bar-contain {
   max-width: 88%;
   margin-bottom: 12px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 188, ../dev/sass/4-pages/_page-landing.sass */
+  /* line 189, ../dev/sass/4-pages/_page-landing.sass */
   .bars-inline .bars .js-bar-contain {
     max-width: 100%;
   }
 }
 
-/* line 193, ../dev/sass/4-pages/_page-landing.sass */
+/* line 194, ../dev/sass/4-pages/_page-landing.sass */
 .js-bar--orange {
   background: #fe5000;
 }
 
-/* line 195, ../dev/sass/4-pages/_page-landing.sass */
+/* line 196, ../dev/sass/4-pages/_page-landing.sass */
 .js-bar--grey {
   background: #b1b3b3;
 }
