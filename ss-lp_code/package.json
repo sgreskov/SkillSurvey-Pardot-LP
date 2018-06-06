@@ -2,11 +2,12 @@
     "name": "SkillSurvey_Pardot_LP",
     "version": "1.0.0",
     "devDependencies": {
-        "grunt": "*",
-        "grunt-autoprefixer": "*",
-        "grunt-contrib-clean": "*",
-        "grunt-contrib-compass": "*",
-        "grunt-contrib-copy": "*",
-        "grunt-contrib-watch": "*"
+        "grunt": "^1.0.1",
+        "grunt-autoprefixer": "~3.0.4",
+        "grunt-browserify": "^5.2.0",
+        "grunt-contrib-clean": "~1.0.0",
+        "grunt-contrib-compass": "~1.1.1",
+        "grunt-contrib-copy": "~1.0.0",
+        "grunt-contrib-watch": "~1.0.0"
     }
 }
