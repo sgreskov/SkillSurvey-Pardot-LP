@@ -1,5 +1,5 @@
 {
-    "name": "SkillSurvey Pardot LP",
+    "name": "SkillSurvey_Pardot_LP",
     "version": "1.0.0",
     "devDependencies": {
         "grunt": "*",
