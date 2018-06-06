@@ -4,9 +4,10 @@ var ANIMATION_DELAY = 400;
 
 var bars = doc.querySelectorAll('.js-bar');
 var navDots = doc.querySelectorAll('.vert-dot-nav a');
+var navDotLinks = doc.querySelectorAll('.js-scroll-link');
 
-for (var k = 0; k < navDots.length; k++) {
-  navDots[k].addEventListener('click', function (e) {
+for (var k = 0; k < navDotLinks.length; k++) {
+  navDotLinks[k].addEventListener('click', function (e) {
     e.preventDefault();
    // window.scroll({ top: doc.querySelector(this.getAttribute('href')).getBoundingClientRect().top + window.scrollY, behavior: 'smooth'});
 
@@ -17,7 +18,6 @@ for (var k = 0; k < navDots.length; k++) {
 
 window.addEventListener('scroll', function() {
   var scrollPos = document.documentElement.scrollTop + (window.innerHeight / 2);
-  console.log(scrollPos);
 
   // adjust bar width if bar is in view
   for (var i = 0; i < bars.length; i++) {
